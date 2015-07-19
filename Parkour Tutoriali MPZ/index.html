@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	
+	
+	<script>
+	//skripta s funkcijama pauziranja i pustanaj pozadinskog videa...
+		function playVid() { 
+		var video=document.getElementById("mojVideo"); 
+		video.play(); 
+		} 
+
+		function pauseVid() { 
+		var video=document.getElementById("mojVideo"); 
+			video.pause(); 
+		}
+		
+		
+		function plaviObrub1()
+		{
+			document.getElementById("Kanvas1").style.borderColor = "#0198E1";
+		}
+		function plaviObrub2()
+		{
+			document.getElementById("Kanvas2").style.borderColor = "#0198E1";
+		}
+		function plaviObrub3()
+		{
+			document.getElementById("Kanvas3").style.borderColor = "#0198E1";
+		}
+		function makni_plaviObrub1()
+		{
+			document.getElementById("Kanvas1").style.borderColor = "white";
+		}
+		function makni_plaviObrub2()
+		{
+			document.getElementById("Kanvas2").style.borderColor = "white";
+		}
+		function makni_plaviObrub3()
+		{
+			document.getElementById("Kanvas3").style.borderColor = "white";
+		}
+		
+	</script>
+  	
+	<title>Parkour Tutoriali</title>
+</head>
+<body>
+<main id="cd-main-content">
+
+	<section id="cd-intro">
+		
+		<video  id="mojVideo" src="cd2.mp4" autoplay="true" loop="true" muted="true"> </video>
+		
+		<div class="navigacija">
+			<h1 style="font-size:2.82em;letter-spacing:.35em;position: relative;">MULTIMEDIJSKI PRIKAZ ZNANJA</h1>
+			<canvas id="Kanvas1" onmouseover="plaviObrub1();" onmouseout="makni_plaviObrub1();" width="200" height="50" style="border:1px solid white;border-radius:25px;"> </canvas>
+			<canvas id="Kanvas2" onmouseover="plaviObrub2();" onmouseout="makni_plaviObrub2();" width="195" height="50" style="border:1px solid white;border-radius:25px;"> </canvas>
+			<canvas id="Kanvas3" onmouseover="plaviObrub3();" onmouseout="makni_plaviObrub3();" width="355" height="95" style="border:1px solid white;border-radius:5px;display:none;"> </canvas>	
+		</div>	
+		
+		<script>
+		//postavljanej tekstova za kanvas1 i kanvas2
+			function tekst1() {
+			var c=document.getElementById("Kanvas1");
+			var ctx=c.getContext("2d");
+
+			ctx.font="2em sans-serif";
+			ctx.fillStyle="white";
+			ctx.fillText("O tutorijalu",15,35);
+
+			ctx.font="30px Verdana";
+			}
+			
+			function tekst2() {
+			var c=document.getElementById("Kanvas2");
+			var ctx=c.getContext("2d");
+
+			ctx.font="2em sans-serif ";
+			ctx.fillStyle="white";
+			ctx.fillText("Početak",20,35);
+
+			ctx.font="30px Verdana";
+			}
+			
+			tekst1();
+			tekst2();
+			
+			document.getElementById("Kanvas2").onclick = function( ){
+			window.location.href = 'Tutorial1/Tutorial1.html';
+					}
+
+		</script>
+		
+		
+		
+		<script>
+		//postavljanje tekstova za kanvas3
+		function tekst3() {
+			var c=document.getElementById("Kanvas3");
+			var ctx=c.getContext("2d");
+
+			ctx.font="2em sans-serif ";
+			ctx.fillStyle="white";
+			ctx.font="25px Verdana";
+			ctx.fillText("PARKOUR TUTORIJALI",45,35);
+			ctx.font="20px Verdana";
+			ctx.fillText("Ivan Grobenski",105,75);
+			
+			}
+		tekst3();
+		
+		//displejam kanvas3 na klik misem na kanvas1
+		document.getElementById("Kanvas1").onclick = function( )
+		{
+			var kanvas_3=document.getElementById("Kanvas3");
+			kanvas_3.style.display = 'block';
+		}
+		
+		//micem kanvas3 na klik misem na isti
+		document.getElementById("Kanvas3").onclick = function( )
+		{
+			var kanvas_3=document.getElementById("Kanvas3");
+			kanvas_3.style.display = 'none';
+		}
+			
+		</script>
+		
+		
+		
+		
+		<header class="cd-header">
+			<div id="cd-logo"><a href="index.html"><img src="img/cd-logoo.png" alt="Logo" ></a></div>
+
+			<button onClick="pauseVid();" id="pauza">&#9616;&#9616;</button>
+			<button onClick="playVid();"  id="plej">&#9658;</button>
+			
+			<a class="cd-menu-trigger" href="#main-nav">Menu<span></span></a>
+		</header>
+		
+		<div class="cd-blurred-bg"></div>
+	</section> <!-- cd-intro -->
+</main>
+
+<div class="cd-shadow-layer"></div>
+
+<nav id="main-nav">
+	<ul>
+		<li><a href="Tutorial1/Tutorial1.html"><span>Tutorial 1</span></a></li>
+		<li><a href="Tutorial2/Tutorial2.html"><span>Tutorial 2</span></a></li>
+		<li><a href="Tutorial3/Tutorial3.html"><span>Tutorial 3</span></a></li>
+		<li><a href="Tutorial4/Tutorial4.html"><span>Tutorial 4</span></a></li>
+		<li><a href="Tutorial5/Tutorial5.html"><span>Tutorial 5</span></a></li>
+	</ul>
+	<a href="#0" class="cd-close-menu">Zatvori<span></span></a>
+</nav>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

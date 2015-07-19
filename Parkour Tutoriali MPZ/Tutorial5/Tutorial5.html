@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	
+	<title>Tutorial 5</title>
+	
+	<script>
+		function tocan(){
+				window.alert("bravo");
+				var backflip=document.getElementById("tocan_odgovor");
+				backflip.style.display = 'block';
+				
+				var krivo=document.getElementById("krivi_odgovor");
+				krivo.style.display = 'none';
+				
+				return
+		}
+		
+		function krivi(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor");
+			krivo.style.display = 'block';
+			
+			//ponovno skrivam backflip , jer inace dobivam kosntantno preklapanje slika prilikom promjena odgovora...
+			var backflip=document.getElementById("tocan_odgovor");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		function tocan2(){
+				window.alert("bravo");
+				var backflip=document.getElementById("tocan_odgovor2");
+				backflip.style.display = 'block';
+				
+				var krivo=document.getElementById("krivi_odgovor2");
+				krivo.style.display = 'none';
+				
+				return
+		}
+		
+		function krivi2(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor2");
+			krivo.style.display = 'block';
+			
+			var backflip=document.getElementById("tocan_odgovor2");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		function tocan3(){
+			window.alert("bravo");
+			var backflip=document.getElementById("tocan_odgovor3");
+			backflip.style.display = 'block';
+			
+			var krivo=document.getElementById("krivi_odgovor3");
+			krivo.style.display = 'none';
+			
+			return
+		}
+		
+		function krivi3(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor3");
+			krivo.style.display = 'block';
+			
+			var backflip=document.getElementById("tocan_odgovor3");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		function tocan4(){
+			window.alert("bravo");
+			var backflip=document.getElementById("tocan_odgovor4");
+			backflip.style.display = 'block';
+			
+			var krivo=document.getElementById("krivi_odgovor4");
+			krivo.style.display = 'none';
+			
+			return
+		}
+		
+		function krivi4(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor4");
+			krivo.style.display = 'block';
+			
+			var backflip=document.getElementById("tocan_odgovor4");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		//u kanvas kostur stvari:
+		
+		
+		//funkcije promjene boje za kostura na hover:
+		//ova postavlja sliku umejsto postojece
+		function L_koljeno(){
+			var l_koljeno=document.getElementById("l_koljeno");
+			l_koljeno.style.display = 'block';
+			
+			//Mice defaultnog praznog kostura
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		//mice crveni fokus kad maknem mis s slike:
+		function L_koljeno_makni(){
+			var l_koljeno=document.getElementById("l_koljeno");
+			l_koljeno.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		
+		//GLEZNJEVI:
+		function L_glezanj(){
+			var l_koljeno=document.getElementById("l_glezanj");
+			l_koljeno.style.display = 'block';
+			
+		
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		function L_glezanj_makni(){
+			var l_koljeno=document.getElementById("l_glezanj");
+			l_koljeno.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		
+		//TRTICA:
+		function trtica(){
+			var l_koljeno=document.getElementById("trt");
+			l_koljeno.style.display = 'block';
+			
+		
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		function Trtica_makni(){
+			var l_koljeno=document.getElementById("trt");
+			l_koljeno.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		
+		//RAME:
+		function L_rame(){
+			var l_koljeno=document.getElementById("l_rame");
+			l_koljeno.style.display = 'block';
+			
+		
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		function L_rame_makni(){
+			var l_koljeno=document.getElementById("l_rame");
+			l_koljeno.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		
+		//RAME:
+		function L_Kljucna(){
+			var l_koljeno=document.getElementById("l_kljucna");
+			l_koljeno.style.display = 'block';
+			
+		
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		function L_kljucna_makni(){
+			var l_koljeno=document.getElementById("l_kljucna");
+			l_koljeno.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		//GLAVA
+		function glava(){
+			var glavica=document.getElementById("glavica");
+			glavica.style.display = 'block';
+			
+		
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		function glava_makni(){
+			var glavica=document.getElementById("glavica");
+			glavica.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		
+		
+	</script>
+	
+</head>
+
+<body>
+<main id="cd-main-content">
+	<section id="cd-intro">
+		<h1 style="font-size:4em;letter-spacing:.5em;">SALTO NAPRIJED</h1>
+		
+		<div class="cd-blurred-bg"></div>
+	</section> 
+</main>
+<!--Podnozje,tj interfejs za izbornik: !-->
+<footer class="cd-header">
+	<div id="cd-logo"><a href="../index.html"><img src="img/cd-logoo.png" alt="Logo" ></a></div>
+	<a class="cd-menu-trigger" href="#main-nav">Menu<span></span></a>
+</footer>
+
+<div id="sadrzaj">
+	<iframe width="85%" height="500" src="https://www.youtube.com/embed/OL5GPHRURNI" id="VIDEO_TUT"> </iframe>
+	
+	<div id="QUIZ">
+	
+		<div id="tocan_odgovor" style="float:left;margin-left:-30%;margin-top:7%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor" style="float:left;margin-left:-29%;margin-top:9%;display:none"><img src="../img/pad.gif"></div>
+		
+		<p>1. U koju vještinu kretanja,koja je samo spomenuta u prvom tutorialu, spada front flip (salto naprijed) ?</p>
+		<input type="radio" name="odgovor" onClick="krivi();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Parkour </p></input>
+		<input type="radio"name="odgovor"onClick="tocan();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Freerunning</p></input>
+		<input type="radio"name="odgovor"onClick="krivi();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Tricking</p></input>
+		<input type="radio"name="odgovor"onClick="krivi();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;padding-bottom:4em;">Slobodno penjanje</p></input>
+		
+		
+		
+		<div id="tocan_odgovor2" style="float:left;margin-left:-30%;margin-top:7%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor2" style="float:left;margin-left:-29%;margin-top:9%;display:none"><img src="../img/pad.gif"></div>
+		
+		<p>2. Front flip je uključen u ovu seriju tutoriala iz razloga što nam sposobnost izvođenja flipova/akrobatskih pokreta može indirektno pomoći u razvitku kretnji u parkouru </p>
+		<input type="radio"name="odgovor3" onClick="krivi2();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Netočno</p></input>
+		<input type="radio"name="odgovor3" onClick="tocan2();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Točno</p></input>
+		
+		
+		<div id="tocan_odgovor3" style="float:left;margin-left:-30%;margin-top:16%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor3" style="float:left;margin-left:-29%;margin-top:16%;display:none"><img src="../img/pad.gif"></div>
+		<p style="padding-bottom:5%;margin-top:5%;">3. Odaberite sliku koja najbolje predstavlja idealni trenutak kada bi se trebali početi "otvarati" za uspješan doskok.</p>
+		<div  style="float:left;padding-right:3%;"><img src="img/f3.png"></div>
+		<div  style="float:left;padding-right:3%;"><img src="img/f1.png"></div>
+		<div  style="float:left;"><img src="img/f2.png"></div>
+		
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<input type="radio"name="odgovor3" onClick="tocan3();" style="float:left;margin-left:14%;margin-top:-1%;"> </input>
+		<input type="radio"name="odgovor3" onClick="krivi3();" style="float:left;margin-left:30%;margin-top:-1%;"> </input>
+		<input type="radio"name="odgovor3" onClick="krivi3();" style="float:left;margin-left:32.5%;margin-top:-1%;"> </input>
+		
+		
+		
+		
+		
+		<div style="margin-top:15%;">
+		<div id="tocan_odgovor4" style="float:left;margin-left:-30%;margin-top:15%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor4" style="float:left;margin-left:-29%;margin-top:16%;display:none"><img src="../img/pad.gif"></div>
+		<p>4. Što mislite koji bi od slijedećih salta imao najbržu rotaciju? (prisjetite se, iz tutoriala, o čemu ovisi brzina rotacije) </p>
+		<div id="ruke_krivo1" style="float:left;margin-top:7%;padding-right:2%;"><img src="img/front1.jpg"></div>
+		<div id="ruke_krivo1" style="float:left;margin-top:7%;padding-right:2%;"><img src="img/front2.jpg"></div>
+		<div id="ruke_krivo1" style="float:left;margin-top:7%;"><img src="img/front3.jpg"></div>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<input type="radio"name="odgovor4" onClick="tocan4();" style="float:left;margin-left:15%;margin-top:-1%;"> </input>
+		<input type="radio"name="odgovor4" onClick="krivi4();" style="float:left;margin-left:30%;margin-top:-1%;"> </input>
+		<input type="radio"name="odgovor4" onClick="krivi4();" style="float:left;margin-left:30%;margin-top:-1%;"> </input>
+		</div>
+		
+		
+		<p style="margin-top:20%;">5. Za kraj prođite mišem po razlicitim dijelovima kostura, kako bi vidjeli na koje dijelove trebamo posebice paziti prilikom izvođenja front flipa.   </p>
+		
+		
+		<!-- <canvas id="Kanvas" width="500" height="500" style="border:2px solid black;"> !-->
+		
+		
+		<img src="../Tutorial2/img/ramena1.png" onmouseout="L_kljucna_makni();" id="l_kljucna" style="margin-left:20%;display:none;"/>
+		<img src="../Tutorial2/img/ramena2.png" onmouseout="L_rame_makni();" id="l_rame" style="margin-left:20%;display:none;"/>
+		<img src="../Tutorial2/img/kraljeznica.png" onmouseout="Trtica_makni();" id="trt" style="margin-left:20%;display:none;"/>
+		<img src="../Tutorial2/img/gleznjevi.png" onmouseout="L_glezanj_makni();" id="l_glezanj" style="margin-left:20%;display:none;"/>
+		<img src="../Tutorial2/img/koljena.png" onmouseout="L_koljeno_makni();" id="l_koljeno" style="margin-left:20%;display:none;"/>
+		<img src="../Tutorial2/img/glava.png" onmouseout="glava_makni();" id="glavica" style="margin-left:20%;display:none;"/>
+		
+		<img src="../Tutorial2/img/kostur.png" style="margin-left:20%;" id="KOSTUR" usemap="#Map" />
+		<map name="Map" id="Map" style="padding-bottom:30%;">
+			<area id="L_koljeno" onmouseover="L_koljeno();" shape="poly" coords="90,411,89,434,120,434,117,411" />
+			<area id="L_koljeno" onmouseover="L_koljeno();" shape="poly" coords="136,415,129,437,160,434,161,415,131,413" />
+			<area id="L_glezanj" onmouseover="L_glezanj();" shape="poly" coords="101,550,96,563,119,567,119,556" />
+			<area id="D_glezanj" onmouseover="L_glezanj();" shape="poly" coords="132,559,134,567,161,563,155,551" />
+			<area id="trtica" onmouseover="trtica();" shape="poly" coords="114,209,115,254,123,266,130,251,132,215,134,207,137,215,125,206" />
+			<area id="L_rame" onmouseover="L_rame();" shape="poly" coords="47,120,57,128,65,118,57,110" />
+			<area id="D_rame" onmouseover="L_rame();" shape="poly" coords="190,111,188,123,203,121" />
+			<area id="L_Kljucna" onmouseover="L_Kljucna();"shape="poly" coords="63,102,99,105,92,96,57,96,56,106" />
+			<area id="D_Kljucna" onmouseover="L_Kljucna();" shape="poly" coords="165,103,193,107,201,100,170,96" />
+			<area id="glava" onmouseover="glava();" shape="poly" coords="102,16,99,25,99,34,99,46,98,55,103,66,107,74,113,83,120,86,130,86,138,84,143,82,148,76,150,66,152,54,155,47,152,32,152,22,148,14,138,9,126,7,112,10" />
+			
+		</map>
+		
+		<hr/>
+		
+		<div style="margin-top:30%;padding-bottom:25%;">
+			<a href="../Tutorial4/Tutorial4.html"> <img title="Povratak na prethodni tutorial?" src="../img/prosli.png" style="margin-left:23.5%;"/> </a>
+			
+		</div>
+		
+	
+	</div>
+	
+</div>
+
+
+
+
+
+<div class="cd-shadow-layer"></div>
+
+<nav id="main-nav">
+	<ul>
+		<li><a href="../Tutorial1/Tutorial1.html"><span>Tutorial 1</span></a></li>
+		<li><a href="../Tutorial2/Tutorial2.html"><span>Tutorial 2</span></a></li>
+		<li><a href="../Tutorial3/Tutorial3.html"><span>Tutorial 3</span></a></li>
+		<li><a href="../Tutorial4/Tutorial4.html"><span>Tutorial 4</span></a></li>
+		<li><a href="../Tutorial5/Tutorial5.html"><span>Tutorial 5</span></a></li>
+	</ul>
+	<a href="#0" class="cd-close-menu">Close<span></span></a>
+</nav>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

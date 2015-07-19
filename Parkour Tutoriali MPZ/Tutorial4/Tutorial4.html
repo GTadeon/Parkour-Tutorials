@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	
+	<title>Tutorial 4</title>
+	
+	<script>
+		function tocan(){
+				window.alert("bravo");
+				var backflip=document.getElementById("tocan_odgovor");
+				backflip.style.display = 'block';
+				
+				var krivo=document.getElementById("krivi_odgovor");
+				krivo.style.display = 'none';
+				
+				return
+		}
+		
+		function krivi(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor");
+			krivo.style.display = 'block';
+			
+			//ponovno skrivam backflip , jer inace dobivam kosntantno preklapanje slika prilikom promjena odgovora...
+			var backflip=document.getElementById("tocan_odgovor");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		function tocan2(){
+				window.alert("bravo");
+				var backflip=document.getElementById("tocan_odgovor2");
+				backflip.style.display = 'block';
+				
+				var krivo=document.getElementById("krivi_odgovor2");
+				krivo.style.display = 'none';
+				
+				return
+		}
+		
+		function krivi2(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor2");
+			krivo.style.display = 'block';
+			
+			var backflip=document.getElementById("tocan_odgovor2");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		function tocan3(){
+			window.alert("bravo");
+			var backflip=document.getElementById("tocan_odgovor3");
+			backflip.style.display = 'block';
+			
+			var krivo=document.getElementById("krivi_odgovor3");
+			krivo.style.display = 'none';
+			
+			return
+		}
+		
+		function krivi3(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor3");
+			krivo.style.display = 'block';
+			
+			var backflip=document.getElementById("tocan_odgovor3");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		function tocan4(){
+			window.alert("bravo");
+			var backflip=document.getElementById("tocan_odgovor4");
+			backflip.style.display = 'block';
+			
+			var krivo=document.getElementById("krivi_odgovor4");
+			krivo.style.display = 'none';
+			
+			return
+		}
+		
+		function krivi4(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor4");
+			krivo.style.display = 'block';
+			
+			var backflip=document.getElementById("tocan_odgovor4");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		
+		
+		
+		
+		//tenisica-landing;
+		function prednji(){
+			var pred=document.getElementById("pred");
+			pred.style.display = 'block';
+			
+			//Mice defaultno praznu tenisicu
+			var tenisica=document.getElementById("tenisica");
+			tenisica.style.display = 'none';
+			
+			
+		}
+		//mice plavi fokus kad maknem mis s slike:
+		function prednji_makni(){
+			var pred=document.getElementById("pred");
+			pred.style.display = 'none';
+			
+			var tenisica=document.getElementById("tenisica");
+			tenisica.style.display = 'block';
+		}
+		
+		
+		function srednji(){
+			var sred=document.getElementById("sred");
+			sred.style.display = 'block';
+
+			var tenisica=document.getElementById("tenisica");
+			tenisica.style.display = 'none';
+			
+		}
+		function srednji_makni(){
+			var sred=document.getElementById("sred");
+			sred.style.display = 'none';
+			
+			var tenisica=document.getElementById("tenisica");
+			tenisica.style.display = 'block';
+		}
+		
+		function zadnji(){
+			var zad=document.getElementById("zad");
+			zad.style.display = 'block';
+
+			var tenisica=document.getElementById("tenisica");
+			tenisica.style.display = 'none';
+			
+		}
+		function zadnji_makni(){
+			var zad=document.getElementById("zad");
+			zad.style.display = 'none';
+			
+			var tenisica=document.getElementById("tenisica");
+			tenisica.style.display = 'block';
+		}
+		
+		function puno(){
+			var pun=document.getElementById("pun");
+			pun.style.display = 'block';
+
+			var tenisica=document.getElementById("tenisica");
+			tenisica.style.display = 'none';
+			
+		}
+		function puno_makni(){
+			var pun=document.getElementById("pun");
+			pun.style.display = 'none';
+			
+			var tenisica=document.getElementById("tenisica");
+			tenisica.style.display = 'block';
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//kostur-ozljede: 
+		
+		//funkcije promjene boje za kostura na hover:
+		//ova postavlja sliku umejsto postojece
+		function L_koljeno(){
+			var l_koljeno=document.getElementById("l_koljeno");
+			l_koljeno.style.display = 'block';
+			
+			//Mice defaultnog praznog kostura
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		//mice crveni fokus kad maknem mis s slike:
+		function L_koljeno_makni(){
+			var l_koljeno=document.getElementById("l_koljeno");
+			l_koljeno.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		
+		//GLEZNJEVI:
+		function L_glezanj(){
+			var l_koljeno=document.getElementById("l_glezanj");
+			l_koljeno.style.display = 'block';
+			
+		
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		function L_glezanj_makni(){
+			var l_koljeno=document.getElementById("l_glezanj");
+			l_koljeno.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		
+		function L_zglob(){
+			var l_zglob=document.getElementById("l_zglob");
+			l_zglob.style.display = 'block';
+			
+		
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		function L_zglob_makni(){
+			var l_zglob=document.getElementById("l_zglob");
+			l_zglob.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		function L_lakat(){
+			var l_lakat=document.getElementById("l_lakat");
+			l_lakat.style.display = 'block';
+			
+		
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		function L_lakat_makni(){
+			var l_lakat=document.getElementById("l_lakat");
+			l_lakat.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+		function L_rame(){
+			var l_koljeno=document.getElementById("l_rame");
+			l_koljeno.style.display = 'block';
+			
+		
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'none';
+			
+		}
+		function L_rame_makni(){
+			var l_koljeno=document.getElementById("l_rame");
+			l_koljeno.style.display = 'none';
+			
+			var kostur=document.getElementById("KOSTUR");
+			kostur.style.display = 'block';
+		}
+
+		
+		
+		
+	</script>
+	
+</head>
+
+<body>
+<main id="cd-main-content">
+	<section id="cd-intro">
+		<h1 style="font-size:4em;letter-spacing:.5em;">DIVE KONG</h1>
+		
+		<div class="cd-blurred-bg"></div>
+	</section> 
+</main>
+<!--Podnozje,tj interfejs za izbornik: !-->
+<footer class="cd-header">
+	<div id="cd-logo"><a href="../index.html"><img src="img/cd-logoo.png" alt="Logo" ></a></div>
+	<a class="cd-menu-trigger" href="#main-nav">Menu<span></span></a>
+</footer>
+
+<div id="sadrzaj">
+	<iframe width="85%" height="500" src="https://www.youtube.com/embed/NyDpHjKz9XU" id="VIDEO_TUT"> </iframe>
+	
+	<div id="QUIZ">
+	
+		<div id="tocan_odgovor" style="float:left;margin-left:-30%;margin-top:7%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor" style="float:left;margin-left:-29%;margin-top:9%;display:none"><img src="../img/pad.gif"></div>
+		
+		<p>1. Kada koristimo dive kong?</p>
+		<input type="radio" name="odgovor" onClick="krivi();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Obicno preko nekih kratkih prepreka.</p></input>
+		<input type="radio"name="odgovor"onClick="krivi();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Obicno kada se trebamo popesti negdje.</p></input>
+		<input type="radio"name="odgovor"onClick="tocan();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;padding-bottom:4em;">Obicno preko nekih jako dugackih i izduzenih objekata  ili kad uvjeti okoline zahtjevaju prelazak preko dvaju udaljenih objekata (npr 2 zida izmedu kojih je rupa). </p></input>
+		
+
+		
+		<div id="tocan_odgovor2" style="float:left;margin-left:-30%;margin-top:7%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor2" style="float:left;margin-left:-29%;margin-top:9%;display:none"><img src="../img/pad.gif"></div>
+		
+		<p>2. Na kojoj od slijedecih prijelaza od točke A do točke B bi bilo idealno iskoristi dive kong?  </p>
+		<div  style="float:left;margin-top:5%;padding-right:2%;"><img src="img/kong1.jpg"></div>
+		<div  style="float:left;margin-top:5%;padding-right:2%;"><img src="img/kong2.jpg"></div>
+		<div  style="float:left;margin-top:5%;"><img src="img/kong3.jpg"></div>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<input type="radio"name="odgovor2" onClick="tocan2();" style="float:left;margin-left:15%;margin-top:-1%;"> </input>
+		<input type="radio"name="odgovor2" onClick="krivi2();" style="float:left;margin-left:30%;margin-top:-1%;"> </input>
+		<input type="radio"name="odgovor2" onClick="krivi2();" style="float:left;margin-left:30%;margin-top:-1%;"> </input>
+		
+		
+		
+		<div id="tocan_odgovor3" style="float:left;margin-left:-108%;margin-top:7%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor3" style="float:left;margin-left:-108%;margin-top:9%;display:none;"><img src="../img/pad.gif"></div>
+		<p style="margin-top:5%;">3.Izuzetno dobro izveden dive kong čini kombinacije dobre tehnike i snage (odraza ) u omjeru 1:1</p>
+		<input type="radio"name="odgovor3" onClick="tocan3();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Točno</p></input>
+		<input type="radio"name="odgovor3" onClick="krivi3();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Netočno</p></input>
+		
+		
+	
+		
+		
+		
+		<div style="margin-top:15%;">
+		<div id="tocan_odgovor4" style="float:left;margin-left:-30%;margin-top:15%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor4" style="float:left;margin-left:-29%;margin-top:16%;display:none"><img src="../img/pad.gif"></div>
+		<p>4. Kliknite na dio tenisice koji predstavlja dio stopala na koji nikad nebismo smjeli doskočiti prilikom izvodenja ove kretnje, ali i bilo kojeg drugog skoka. (2 su točna odgovora)  </p>
+		
+		<img src="../Tutorial3/img/prednji.png" onmouseout="prednji_makni();" onClick="krivi4();" id="pred" style="display:none;"/>
+		<img src="../Tutorial3/img/srednji.png" onmouseout="srednji_makni();" onClick="krivi4();" id="sred" style="display:none;"/>
+		<img src="../Tutorial3/img/puno.png" onmouseout="puno_makni();" onClick="tocan4();" id="pun" style="display:none;"/>
+		<img src="../Tutorial3/img/zadnji.png" onmouseout="zadnji_makni();" onClick="tocan4();" id="zad" style="display:none;"/>
+		
+		<img src="../Tutorial3/img/tenisica.png" usemap="#Map2" id="tenisica"/>
+		<map name="Map2" id="Map2">
+			<area id="prednji" onmouseover="prednji();"  shape="poly" coords="157,340,152,360,224,391,310,406,388,407,404,403,395,376,348,352,320,346,312,320,319,299" />
+			<area id="srednji" onmouseover="srednji();"  shape="poly" coords="328,339,380,360,408,381,414,395,526,395,572,344,639,318,649,309,497,295,453,273" />
+			<area id="zadnji" onmouseover="zadnji();"  shape="poly" coords="540,398,626,394,654,383,660,305,568,358,550,375" />
+			<area id="puno" onmouseover="puno();"  shape="poly" coords="659,402,658,392,576,403,366,409,150,372,148,404,259,439,495,445,663,427" />
+		</map>
+		
+		
+		<p style="margin-top:20%;">5. Za kraj prođite mišem po različitim dijelovima kostura, kako bi vidjeli koji dijelovi tijela se "najviše troše" prilikom nepravilne (a katkad i pravilne) izvedbe dive konga.  </p>
+		
+		
+		<!-- <canvas id="Kanvas" width="500" height="500" style="border:2px solid black;"> !-->
+		
+		
+		
+		<img src="../Tutorial2/img/gleznjevi.png" onmouseout="L_glezanj_makni();" id="l_glezanj" style="margin-left:20%;display:none;"/>
+		<img src="../Tutorial2/img/koljena.png" onmouseout="L_koljeno_makni();" id="l_koljeno" style="margin-left:20%;display:none;"/>
+		<img src="../Tutorial2/img/zglobovi.png" onmouseout="L_zglob_makni();" id="l_zglob" style="margin-left:20%;display:none;"/>
+		<img src="../Tutorial2/img/laktovi.png" onmouseout="L_lakat_makni();" id="l_lakat" style="margin-left:20%;display:none;"/>
+		<img src="../Tutorial2/img/ramena2.png" onmouseout="L_rame_makni();" id="l_rame" style="margin-left:20%;display:none;"/>
+		 
+		<img src="../Tutorial2/img/kostur.png"  style="margin-left:20%;" id="KOSTUR" usemap="#Map" />
+		<map name="Map" id="Map" style="padding-bottom:30%;">
+			<area id="L_koljeno" onmouseover="L_koljeno();" shape="poly" coords="90,411,89,434,120,434,117,411" />
+			<area id="L_koljeno" onmouseover="L_koljeno();" shape="poly" coords="136,415,129,437,160,434,161,415,131,413" />
+			<area id="L_glezanj" onmouseover="L_glezanj();" shape="poly" coords="101,550,96,563,119,567,119,556" />
+			<area id="L_glezanj" onmouseover="L_glezanj();" shape="poly" coords="132,559,134,567,161,563,155,551" />
+			<area id="L_zglob" onmouseover="L_zglob();" shape="poly" coords="24,294,17,306,43,306,45,300" />
+			<area id="L_zglob" onmouseover="L_zglob();" shape="poly" coords="201,294,197,306,226,310,221,297" />
+			<area id="L_lakat" onmouseover="L_lakat();" shape="poly" coords="31,210,31,227,57,226,53,215,58,211,55,205" />
+			<area id="L_lakat" onmouseover="L_lakat();" shape="poly" coords="196,207,197,227,218,224,217,212,217,209" />
+			<area id="L_rame" onmouseover="L_rame();" shape="poly" coords="47,120,57,128,65,118,57,110" />
+			<area id="D_rame" onmouseover="L_rame();" shape="poly" coords="190,111,188,123,203,121" />
+			
+		</map>
+		
+		<hr/>
+		
+		<div style="margin-top:30%;padding-bottom:25%;">
+			<a href="../Tutorial3/Tutorial3.html"> <img title="Povratak na prethodni tutorial?" src="../img/prosli.png" style="padding-right:30%;"/> </a>
+			<a href="../Tutorial5/Tutorial5.html">  <img title="Slijedeći tutorial?"  src="../img/slijedeci.png"/> </a>
+		</div>
+		
+	
+	</div>
+	
+</div>
+
+
+
+
+
+
+<div class="cd-shadow-layer"></div>
+
+<nav id="main-nav">
+	<ul>
+		<li><a href="../Tutorial1/Tutorial1.html"><span>Tutorial 1</span></a></li>
+		<li><a href="../Tutorial2/Tutorial2.html"><span>Tutorial 2</span></a></li>
+		<li><a href="../Tutorial3/Tutorial3.html"><span>Tutorial 3</span></a></li>
+		<li><a href="../Tutorial4/Tutorial4.html"><span>Tutorial 4</span></a></li>
+		<li><a href="../Tutorial5/Tutorial5.html"><span>Tutorial 5</span></a></li>
+	</ul>
+	<a href="#0" class="cd-close-menu">Close<span></span></a>
+</nav>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

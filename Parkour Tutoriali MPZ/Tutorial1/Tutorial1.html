@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	
+	<title>Tutorial 1</title>
+	
+	<script>
+		function tocan(){
+				window.alert("bravo");
+				var backflip=document.getElementById("tocan_odgovor");
+				backflip.style.display = 'block';
+				
+				var krivo=document.getElementById("krivi_odgovor");
+				krivo.style.display = 'none';
+				
+				return
+		}
+		
+		function krivi(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor");
+			krivo.style.display = 'block';
+			
+			//ponovno skrivam backflip , jer inace dobivam kosntantno preklapanje slika prilikom promjena odgovora...
+			var backflip=document.getElementById("tocan_odgovor");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		function tocan2(){
+				window.alert("bravo");
+				var backflip=document.getElementById("tocan_odgovor2");
+				backflip.style.display = 'block';
+				
+				var krivo=document.getElementById("krivi_odgovor2");
+				krivo.style.display = 'none';
+				
+				return
+		}
+		
+		function krivi2(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor2");
+			krivo.style.display = 'block';
+			
+			var backflip=document.getElementById("tocan_odgovor2");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		function tocan3(){
+			window.alert("bravo");
+			var backflip=document.getElementById("tocan_odgovor3");
+			backflip.style.display = 'block';
+			
+			var krivo=document.getElementById("krivi_odgovor3");
+			krivo.style.display = 'none';
+			
+			return
+		}
+		
+		function krivi3(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor3");
+			krivo.style.display = 'block';
+			
+			var backflip=document.getElementById("tocan_odgovor3");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		function tocan4(){
+			window.alert("bravo");
+			var backflip=document.getElementById("tocan_odgovor4");
+			backflip.style.display = 'block';
+			
+			var krivo=document.getElementById("krivi_odgovor4");
+			krivo.style.display = 'none';
+			
+			return
+		}
+		
+		function krivi4(){
+			window.alert("krivo!");
+			var krivo=document.getElementById("krivi_odgovor4");
+			krivo.style.display = 'block';
+			
+			var backflip=document.getElementById("tocan_odgovor4");
+			backflip.style.display = 'none';
+			
+			return
+		}
+		
+		
+	</script>
+</head>
+
+<body>
+<main id="cd-main-content">
+	<section id="cd-intro">
+		<h1 style="font-size:4em;letter-spacing:.5em;">ŠTO JE PARKOUR?</h1>
+		
+		<div class="cd-blurred-bg"></div>
+	</section> 
+</main>
+<!--Podnozje,tj interfejs za izbornik: !-->
+<footer class="cd-header">
+	<div id="cd-logo"><a href="../index.html"><img src="img/cd-logoo.png" alt="Logo" ></a></div>
+	<a class="cd-menu-trigger" href="#main-nav">Menu<span></span></a>
+</footer>
+
+<div id="sadrzaj">
+	<iframe width="85%" height="500" src="http://www.youtube.com/embed/SdUG9ZVY_oo" id="VIDEO_TUT"> </iframe>
+	
+	
+	<div id="QUIZ">
+		
+		
+		
+		<div id="tocan_odgovor" style="float:left;margin-left:-30%;margin-top:7%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor" style="float:left;margin-left:-29%;margin-top:9%;display:none"><img src="../img/pad.gif"></div>
+		
+		<p>1. Što je parkour?</p>
+		<input type="radio" name="odgovor" onClick="tocan();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Vještina</p></input>
+		<input type="radio"name="odgovor"onClick="krivi();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Sport</p></input>
+		<input type="radio"name="odgovor"onClick="krivi();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Igra</p></input>
+		<input type="radio"name="odgovor"onClick="krivi();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;padding-bottom:4em;">Borilačka vještina</p></input>
+		
+		
+		
+		<div id="tocan_odgovor2" style="float:left;margin-left:-30%;margin-top:7%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor2" style="float:left;margin-left:-29%;margin-top:9%;display:none"><img src="../img/pad.gif"></div>
+		
+		<p>2. Koja država se smatra domovinom parkoura?</p>
+		<input type="radio"name="odgovor2" onClick="krivi2();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Austrija</p></input>
+		<input type="radio"name="odgovor2" onClick="krivi2();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Španjolska</p></input>
+		<input type="radio"name="odgovor2" onClick="tocan2();" ><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Francuska</p></input>
+		<input type="radio"name="odgovor2" onClick="krivi2();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;padding-bottom:4em;">Njemačka</p></input>
+		
+		
+		<div id="tocan_odgovor3" style="float:left;margin-left:-30%;margin-top:7%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor3" style="float:left;margin-left:-29%;margin-top:9%;display:none"><img src="../img/pad.gif"></div>
+		<p>3. Tko se smatra začetnikom parkoura?</p>
+		<input type="radio"name="odgovor3" onClick="krivi3();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Nema začetnika</p></input>
+		<input type="radio"name="odgovor3" onClick="tocan3();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">David Belle</p></input>
+		<input type="radio"name="odgovor3" onClick="krivi3();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Jackie Chan</p></input>
+		<input type="radio"name="odgovor3" onClick="krivi3();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;padding-bottom:4em;">Tibetansko svećenstvo</p></input>
+		
+		
+		<div id="tocan_odgovor4" style="float:left;margin-left:-30%;margin-top:7%;display:none;"><img src="../img/back.gif"></div>
+		<div id="krivi_odgovor4" style="float:left;margin-left:-29%;margin-top:9%;display:none"><img src="../img/pad.gif"></div>
+		
+		<p>4. Vještina kretanja srodna parkouru, ali ne toliko efikasna (zbog pretjerane upotrebe akrobatike), naziva se:</p>
+		<input type="radio"name="odgovor4" onClick="krivi4();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Tricking</p></input>
+		<input type="radio"name="odgovor4" onClick="tocan4();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Freerunning</p></input>
+		<input type="radio"name="odgovor4" onClick="krivi4();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;">Slobodno penjanje</p></input>
+		<input type="radio"name="odgovor4" onClick="krivi4();"><p style="margin-left:5%;margin-top:-1.6%;font-size:1em;padding-bottom:4em;">Triatlon</p></input>
+		
+		
+		<hr/>
+		
+		<div style="margin-top:30%;padding-bottom:25%;">
+			<a href="../index.html"> <img title="Povratak na naslovnicu?" src="../img/prosli.png" style="padding-right:30%;"/> </a>
+			<a href="../Tutorial2/Tutorial2.html">  <img title="Slijedeći tutorial?"  src="../img/slijedeci.png"/> </a>
+		</div>
+	
+		
+	
+	</div>
+	
+</div>
+
+<div class="cd-shadow-layer"></div>
+
+<nav id="main-nav">
+	<ul>
+		<li><a href="../Tutorial1/Tutorial1.html"><span>Tutorial 1</span></a></li>
+		<li><a href="../Tutorial2/Tutorial2.html"><span>Tutorial 2</span></a></li>
+		<li><a href="../Tutorial3/Tutorial3.html"><span>Tutorial 3</span></a></li>
+		<li><a href="../Tutorial4/Tutorial4.html"><span>Tutorial 4</span></a></li>
+		<li><a href="../Tutorial5/Tutorial5.html"><span>Tutorial 5</span></a></li>
+	</ul>
+	<a href="#0" class="cd-close-menu">Close<span></span></a>
+</nav>
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
